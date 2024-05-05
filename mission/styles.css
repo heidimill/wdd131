@@ -68,3 +68,13 @@ img {
     width: 100%;
     
 }
+
+.dark {
+    background-color: #333;
+    color: white;
+    border: solid white 1px;
+}
+
+.dark .subtitle {
+    color: #A0D4ED;
+}

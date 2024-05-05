@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Heidi Mill">
     <meta name="description" content="BYU-I mission statement">
-    <link href="styles.css" rel="stylesheet">
+    <script src="./mission.js" defer></script>
+    <link href="./styles.css" rel="stylesheet">
     <title>Mission Statement Part One</title>
 </head>
 
 <body>
     <div class="box">
+        <select name="theme" id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
         <div class="contain">
             <header>
                 <h1>MISSION STATEMENT</h1>
@@ -33,7 +38,7 @@
             </main>
 
             <footer>
-                <img src="byui-logo_blue.webp" alt="byui-logo_blue">
+                <img id = "logo" src="./images/byui-logo_blue.webp" alt="byui-logo_blue">
             </footer>
         </div>
     </div>
