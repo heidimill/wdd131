@@ -108,22 +108,31 @@ figure img {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;  
 }
 
-a {
-   flex: 1;
-}
-
-.menu-button {
-    display: none;
-}
-
+@media screen and (min-width: 1000px) {
+    
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;  
+    }
+    
+    a {
+       flex: 1;
+    }
+    
+    .menu-button {
+        display: none;
+    }
+    
 }
