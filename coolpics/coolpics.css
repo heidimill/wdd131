@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+
+:root {
+    --primary-color: #3E000C;
+    --secondary-color: #D10000;
+    --accent-color: #f45b69;
+    --text-dark: #7C0B2B;
+    --text-light: #FFCBDD;
+    --primary-font: Arial, Helvetica,sans-serif;
+    --secondary-font: Mooli, san-serif;
+    }
+
+/* Global styles */
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em; /* Increase base font size */
+    color: var(--text-dark);
+    margin: 0 auto; /* Center-align content within the body */
+    padding: 0; /* Add some padding to the sides */
+  }
+
+  h1, h2 {
+    font-family: var(--secondary-font);
+    text-align: center;
+  }
+  
+  a:link, a:visited, button {
+    color: var(--accent-color); /* Link colors */
+    /* text-decoration: none; /*Remove default underline */
+    text-align: center;
+  }
+  
+  img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop images to fit container */
+    width: 100%; /* Ensure image fills its container */
+    border: 10px solid #fff; /* Add a small white border */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
+  }
+  
+  /* Header and Footer */
+  header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 10px;
+  }
+  
+  main {
+    max-width: 1200px; /* Set maximum width for the main element */
+    margin: 0 auto; /* Center-align content within the main element */
+    padding: 0 20px; /* Add some padding to the sides */
+  }
+
+  /* Menu button */
+  .menu-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .menu-button {
+    /* Styles for the menu button */
+    margin-left: auto; /* Push the button to the right */
+    margin-right: 10px; /* Add some right margin for spacing */
+    padding: 5px;
+    font-family: var(--primary-font);
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    font-size: 1.2em;
+    text-align: center;
+    justify-self: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: block; /* Ensure button is visible */
+    }
+  
+  /* Navigation */
+  nav {
+    display: none; /* Hide navigation by default on small screens */
+  }
+
+  
+  .container {
+    max-width: 1200px; /* Set maximum width for the container */
+    width: 100%; /* Ensure the container fills the available space */
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Spread out links and button */
+    align-items: center; /* Center-align flex items vertically */
+  }
+
+  
+
+  
+  
+  
+  
+  /* Media Query for small screens */
+  @media (max-width: 600px) {
+    nav {
+      display: block; /* Show navigation on small screens */
+    }
+  
+    .menu-button {
+      /* Style menu button to not look like a button */
+      /* For example, you could add some styles like padding, background color, etc. */
+      padding: 5px;
+      font-family: var(--primary-font);
+      background-color: var(--primary-color);
+      color: var(--accent-color);
+      font-size: 1.2em;
+      text-align: center;
+      justify-self: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  
+    /* Display links vertically on small screens */
+    nav a:link,
+    nav a:visited {
+      display: block;
+      padding: 5px;
+    }
+  }
+  
+  /* Media Query for wider screens */
+  @media screen and (min-width: 700px) {
+    .gallery {
+      display: grid; /* Use grid layout */
+      grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+    .container {
+        max-width: 1200px; /* Set maximum width for the container */
+        width: 100%; /* Ensure the container fills the available space */
+        display: flex; /* Use flexbox layout */
+        justify-content: center; /* Spread out links and button */
+        justify-self: center;
+        align-items: center; /* Center-align flex items vertically */
+        margin: 0 auto; /* Center-align the container */
+        
+      }
+
+    nav {
+        display: flex;
+        justify-content: center;
+      }
+    
+    /* Spread out links evenly */
+    nav a {
+    flex: 1;  /* Allow links to grow and fill available space */
+    text-align: center; /* Center-align link text */
+    margin: 0 10px; /* Add margin between links */
+    }
+
+    nav a span {
+        display: inline-block;
+        max-width: 150px; /* Set maximum width for the link text */
+        overflow: hidden;
+        white-space: nowrap; /* Prevent wrapping */
+        text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+    }
+
+    .menu-button {
+        display: none; /* Hide menu button on wider screens */
+      }
+  }
+  
+  /* Media Query for even wider screens */
+  @media screen and (min-width: 1000px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr 1fr; /* Three columns */
+    }
+  
+    nav {
+      display: flex; /* Display navigation horizontally */
+      justify-content: center; /* Center-align navigation items */
+    }
+       
+    /* Spread out links evenly */
+    nav a{
+    flex: 1;  /*Allow links to grow and fill available space */
+    text-align: center; /* Center-align link text */
+    margin: 0 10px; /* Add margin between links */
+    }
+    
+    /* Spread out links evenly */
+    .container {
+    max-width: 1200px; /* Set maximum width for the container */
+    width: 100%; /* Ensure the container fills the available space */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Spread out links and button */
+    justify-self: center;
+    align-items: center; /* Center-align flex items vertically */
+    margin: 0 auto;
+    }
+
+    .menu-button {
+      display: none; /* Hide menu button on wider screens */
+    }
+  }
+  

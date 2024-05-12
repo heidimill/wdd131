@@ -10,7 +10,7 @@ function changeTheme() {
     const logo = document.getElementById('logo'); 
     
     // Perform actions based on selected theme
-    if (selectedTheme === 'dark') {
+    if (selectedTheme === 'dark') {S
         // Add the dark class to the body
         body.classList.add('dark');
         // Change the source of the logo to point to the white logo
