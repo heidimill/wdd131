@@ -20,9 +20,9 @@ window.addEventListener("resize", handleResize)
 
 function viewerTemplate(path, alt) {
     return `<div class="viewer">
-            <button class="close-viewer">X</button>
-            <img src=${path} alt=${alt}>
-        </div>`;
+                <button class="close-viewer">X</button>
+                <img class="full_img" src=${path} alt=${alt}>
+            </div>`;
 }
 
 function viewHandler(event) {
