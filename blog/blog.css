@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gochi+Hand&family=Lora&display=swap');
+
+:root {
+    --primary-color: #436429;
+    --secondary-color: #3f3433;
+    --accent-color: #EA9010;
+    --text-dark: #2a2a16;
+    --text-light:#EAEFBD;
+    --background-color: #f8f8f8;
+    --primary-font: Helvetica, Arial, sans-serif;
+    --secondary-font: Lora, Impact, serif;
+}
+
+body {
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-dark);
+}
+
+main {
+    max-width: 1200px;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    color: var(--primary-color);
+    margin: 20px 0;
+    font-size: 2.75em;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    color: var(--primary-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Skip to content link */
+.skiptocontent a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--background-color);
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skiptocontent a:focus {
+    top: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color:var(--background-color);
+    padding: 10px 20px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: end;
+    justify-items: end;
+    margin-top: 10px;
+    border-top: 2px solid var(--accent-color);
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    padding-left: 40px;
+}
+
+nav li {
+    font-size: 1.8em;
+}
+
+nav a {
+    color: var(--primary-color);
+    padding: 5px 10px;
+}
+
+/* Main Content Layout */
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Articles */
+.articles {
+    display: grid;
+    gap: 20px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    position: relative; /* Added for the pseudo-element */
+    padding: 20px; /* Added padding */
+}
+
+
+/* Adjusted padding and right alignment */
+.details {
+    font-size: 1.2em;
+    color: var(--text-dark);
+    text-align: right; /* Changed to right alignment */
+}
+
+.details .date {
+    font-weight: bold;
+}
+
+/* Adding max-width to content */
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px; 
+    padding: 10px 50px;    
+    border-left: 2px solid #52494831;
+}
+
+.content img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* Adding the vertical line */
+article::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: calc(25% + 10px); /* Adjust according to the gap */
+    width: 2px;
+    background-color: var(--background-color);
+}
+
+/* Filters */
+.filters {
+    background-color: var(--background-color);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: var(--text-dark);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--background-color);
+    border-top: 2px solid var(--accent-color);
+}
