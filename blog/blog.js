@@ -23,5 +23,50 @@ const articles = [
 		ages: '12-16',
 		genre: 'Fantasy',
 		stars: '⭐⭐⭐⭐'
+	},
+	{
+		id: 3,
+		title: "Belgariad Book One: Pawn of Prophecy",
+		date: "Feb 12, 2022",
+		description:
+		'A fierce dispute among the Gods and the theft of a powerful Orb leaves the World divided into five kingdoms. Young Garion, with his "Aunt Pol" and an elderly man calling himself Wolf --a father and daughter granted near-immortality by one of the Gods -- set out on a complex mission.',
+		imgSrc:
+		"https://images-na.ssl-images-amazon.com/images/I/41ZxXA+nInL.jpg",
+		imgAlt: "Book cover for Pawn of Prophecy",
+		ages: "12-16",
+		genre: "Fantasy",
+		stars: "⭐⭐⭐⭐⭐"
 	}
 ]
+
+
+// Get the reference to the articles container
+const articlesContainer = document.querySelector('.articles');
+
+// Function to create and append articles
+articles.forEach(article => {
+    // Create a new article element
+    const newArticle = document.createElement('article');
+    newArticle.classList.add('article'); // Add any classes you need
+
+    // Create a template literal string for the article content
+    const articleHTML = `
+		<div class="details">
+			<p class="date">${article.date}</p>
+			<p class="age">${article.ages}</p>
+			<p class="genre">${article.genre}</p>
+			<p class="stars">${article.stars}</p>
+		</div>
+		<div class="content">
+			<h2>${article.title}</h2>
+			<img src=${article.imgSrc} alt=${article.imgAlt}>
+			<p>${article.description}</p>
+		</div>
+    `;
+
+    // Set the innerHTML of the new article
+    newArticle.innerHTML = articleHTML;
+
+    // Append the new article to the articles container
+    articlesContainer.appendChild(newArticle);
+});
