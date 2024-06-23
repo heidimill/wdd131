@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: "Nothing You Could Do", Arial, Helvetica, sans-serif;
+    --secondary-font: Arial, Helvetica,sans-serif;
+}
+
+* {
+    font-family: var(--secondary-font);
+    color: var(--text-dark);
+}
+
+body {
+    padding: 18px;
+    justify-content: center;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70px;
+    margin: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#title {
+    font-family: var(--primary-font);
+    transform: scaleY(1.1);
+}
+
+#logo-title {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 18px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5px;
+    width: 100%;
+}
+
+#search img {
+    width: 25px;
+    height: 100%;
+    border-left: 1px solid black;
+    padding-left: 5px;
+}
+
+#search input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    margin: 8px;
+}
+
+hr {
+    width: 100%;
+}
+
+.recipe-section {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 18px 0;
+}
+
+.food-img {
+    max-width: 400px;
+}
+
+.recipe-name {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+}
+
+.description {
+    display: none;
+}
+
+.tags {
+    display: flex;
+}
+
+.tags p {
+    margin-top: 3px;
+    margin-right: 15px;
+    padding: 5px;
+    border: 1px solid #333333c8;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social img {
+    width: 50px;
+}
+
+@media (min-width: 600px) {
+    .recipe-section {
+        display: flex;
+        flex-direction: row;
+    }
+    .description {
+        display: flex;
+    }
+    .inner-info {
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer a {
+        order: 1;
+    }
+    .social {
+        order: 2;
+    }
+}
+
+@media (min-width: 960px) {
+    body {
+        max-width: 960px;
+    }
+}
