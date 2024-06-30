@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Heidi Mill">
     <meta name="description" content="recipe book blog">
-    <script src="./main.js" defer></script>
+    <script type="module" src="./main.js" defer ></script>
     <link href="./recipes.css" rel="stylesheet">
     <title>Recipes</title>
 </head>
@@ -15,34 +15,15 @@
         <h1 id="title">Recipe Book</h1>
     </header>
     <main>
-        <div id="search">
-            <input type="text" placeholder="Find a Recipe">
+        <form id="search-form">
+            <input id="search-input" type="text" placeholder="Find a Recipe">
             <div id="vertical-line"></div>
-            <img src="./images/search.svg" alt="search-icon">
-        </div>
+            <button type="submit" id="search-button"><img src="./images/search.svg" alt="search-icon"></button>
+            
+        </form>
         <hr>
-        <div class="recipe-section">
-            <img src="./images/roasted-potatoes.webp" alt="roasted poatato slices img" class="food-img">
-            <div class="inner-info">
-                <div class="tags">
-                    <p>Potatoes</p>
-                    <p>Side</p>
-                </div>
-                <h2 class="recipe-name">Oven Roasted Potato Slices</h2>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                        >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="description">Easy and delicious oven roasted potatoes that go great with almost anything.</p>
-            </div>
-        </div>
+        <div class="recipes"></div>
+        
     </main>
     <footer>
         <div class="social">

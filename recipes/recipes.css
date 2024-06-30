@@ -48,7 +48,7 @@ main {
     align-items: center;
 }
 
-#search {
+#search-form {
     display: flex;
     flex-direction: row;
     border: 1px solid black;
@@ -60,14 +60,19 @@ main {
     width: 100%;
 }
 
-#search img {
+#search-form img, #search-form button {
     width: 25px;
-    height: 100%;
-    border-left: 1px solid black;
+    height: 120%;
+    border: none;
     padding-left: 5px;
+    background-color: white;
 }
 
-#search input {
+#search-form button {
+    border-left: 1px solid black;
+}
+
+#search-form input {
     border: none;
     height: 100%;
     width: 100%;
