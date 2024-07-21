@@ -318,6 +318,12 @@ footer p {
     grid-column: 1/2;
     grid-row: 1/2;
   }
+
+  .switch p {
+    width: 90px;
+    font-size: .9em;
+    margin: 20px auto;
+  }
   
   /* Hide default HTML checkbox */
   .switch input {
