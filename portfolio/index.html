@@ -9,29 +9,59 @@
     <link href="./styles/style.css" rel="stylesheet">
     <title>Heidi Mill - Portfolio</title>
 </head>
-<body>
+<body data-page="home">
     <header>
-        <a href="#">Resume</a>
-        <a href="./index.html"><img src="./images/blue_background_logo.png" alt="portfolio logo"></a>
-        <a href="./CarSellingPrice.html">Projects</a>
+        <div class="container">
+            <nav>
+                <a href="./resume.html" id="link-1">Resume</a>
+                <a href="./index.html" id="link-2"><img src="./images/blue_background_logo.png" alt="portfolio logo" id="logo"></a>
+                <a href="./projects.html" id="link-3">Projects</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+       <div id="about-me">
+            <h2>About Me</h2>
+            <p>As a young child, I was obsessed with school and learning. I would often set up all my stuffed animals facing me as I pretended to be a teacher at the chalkboard informing them about all the data I had discovered that day. I later went on to be valedictorian of my high school and graduated with an associate degree. Learning was and always will be my calling. But how do you continue to grow your mind and satisfy your curiosity in your career? </p>
+            <p>For me, it is through data science. There is always something to be learned and studied and discovered through data. I yearn for it. As such, I am growing and developing many skills pertaining to data science. I want to stay on top of this heavily data driven world.</p>
+            <p>I have technical skills in Python, R, SQL, PySpark, Polars, and Pandas with proficiency in HTML and CSS. I give extreme attention to detail through the use of these skills. I take advantage of my desire and ability to learn as I progress through my program and push myself through understanding data.</p>
+       </div>
+       <img src="./images/031-Heidi Mill-professional photo.jpg" alt="photo of heidi mill" id="portrait">
+       <div id="skills">
+            <h2>My Skills</h2>
+            <p>CSS | Dash | Databricks | HTML | Pandas | Polars | PySpark | Python | R | SQL    </p>
+       </div>
+       <div class="slider-container">
+        <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <a href="./projects.html"><img src="./images/car_graph.png" style="width:100%"></a>
+                <div class="text">Transformational Linear Regression for Math 425</div>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="./projects.html"><img src="./images/big_data_graph.png" style="width:100%"></a>
+                <div class="text">Big Data Project for Math 460</div>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="./projects.html"><img src="./images/consult-dashboard.png" style="width:100%"></a>
+                <div class="text">Consulting Project for Freemont School District</div>
+            </div>
+
+            <br>
+        </div>
     </main>
     <footer>
-        <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-        </label>
-        <p>copright &copy; 2024</p>
-
-
-
+        <div class="container-footer">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <p>copyright &copy; Heidi Mill 2024</p>
+            <a href="https://www.linkedin.com/in/heidi-mill" target="_blank" id="linkedin-icon"><img src="./images/linked_in_white.png" alt="linked in logo" ></a>
+            <a href="#" id="email-icon" class="email"><img src="./images/white-email.png" alt="email icon"></a>
+            <a href="#" id="phone-icon" class="phone"><img src="./images/white-phone.png" alt="phone icon"></a>
+        </div>
     </footer>
     
 </body>

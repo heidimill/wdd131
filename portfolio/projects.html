@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Heidi Mill">
+    <meta name="description" content="career portfolio">
+    <script type="module" src="./main.js" defer ></script>
+    <link href="./styles/style.css" rel="stylesheet">
+    <title>Heidi Mill - Portfolio</title>
+</head>
+<body data-page="projects">
+    <header>
+        <div class="container">
+            <nav>
+                <a href="./resume.html" id="link-1">Resume</a>
+                <a href="./index.html" id="link-2"><img src="./images/blue_background_logo.png" alt="portfolio logo" id="logo"></a>
+                <a href="./projects.html" id="link-3">Projects</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="filters">
+            <label><input type="checkbox" class="filter" value="Dash"> Dash</label>
+            <label><input type="checkbox" class="filter" value="Databricks"> Databricks</label>
+            <label><input type="checkbox" class="filter" value="Plotly"> Plotly</label>
+            <label><input type="checkbox" class="filter" value="Polars"> Polars</label>
+            <label><input type="checkbox" class="filter" value="PySpark"> PySpark</label>
+            <label><input type="checkbox" class="filter" value="Python"> Python</label>
+            <label><input type="checkbox" class="filter" value="R"> R</label>
+            <label><input type="checkbox" class="filter" value="SQL"> SQL</label>
+        </div>
+        <div id="projects-grid">
+            <div class="project-info" data-id="1" data-languages="R">
+                <h3>Cars Project</h3>
+                <p>This was completed for applied linear regression Math 425 at BYUI. The data was collected manually. The goal was to create a regression line comparing the miles and the sell price for a car model of our choosing. It was up to our descretion to choose a reasonable sell point.
+                </p> 
+                <p>
+                Applicable technical skills: R
+                </p>
+                <p>
+                    Soft skills: Researching
+                </p>
+                <a href="./CarSellingPrice.html" target="_blank">Car project</a>
+            </div>
+            <div class="project-photo" data-id="1">
+                <img class="projects-page-img" src="./images/car_graph.png" alt="car project photo">
+            </div>
+            <div class="project-photo" data-id="2" >
+                <img class="projects-page-img" src="./images/big_data_graph.png" alt="big data photo">
+            </div>
+            <div class="project-info" data-id="2" data-languages="PySpark,Polars,Databricks,SQL,Plotly">
+                <h3>Big Data Project</h3>
+                <p>This was completed for Big Data Programming, DS 460 at BYUI. The entire semester consisted of this one project. We were given access to many public datasets and asks to design a project that could be turned into a marketable product. In the end, we settled on predicting the best location to earn the most money for certain franchises.
+                </p> 
+                <p>
+                Applicable technical skills: Databricks, Plotly, Polars, PySpark, SQL 
+                </p>
+                <p>
+                Soft skills: Problem framing, Problem solving
+                </p>
+                <a href="./big_data_project_highlight.html" target="_blank">Big Data Project</a>
+            </div>
+            <div class="project-info" data-id="3" data-languages="Python,Polars,Plotly,Dash">
+                <h3>Freemont School District</h3>
+                <p>This was completed for Data Science and Statistincs Consulting, DS 488 at BYUI. We worked as a team with the superinntendent. We delivered an interactive dashboard based on student attendance and test data. The data is confidential.
+                </p> 
+                <p>
+                Applicable technical skills: Dash, Plotly, Polars, Python
+                </p>
+                <p>
+                    Soft skills: Team dynamics, Github organization
+                </p>
+                <a href="#" target="_blank">No Project Preview</a>
+            </div>
+            <div class="project-photo" data-id="3" >
+                <img class="projects-page-img" src="./images/consult-dashboard.png" alt="consulting photo">
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container-footer">
+            <label class="switch">
+                <input type="checkbox" id="theme-switch">
+                <span class="slider round"></span>
+            </label>
+            <p>copyright &copy; Heidi Mill 2024</p>
+            <a href="https://www.linkedin.com/in/heidi-mill" target="_blank" id="linkedin-icon"><img src="./images/linked_in_white.png" alt="linked in logo" ></a>
+            <a href="#" id="email-icon" class="email"><img src="./images/white-email.png" alt="email icon"></a>
+            <a href="#" id="phone-icon" class="phone"><img src="./images/white-phone.png" alt="phone icon"></a>
+        </div>
+    </footer>
+    
+</body>
+</html>
