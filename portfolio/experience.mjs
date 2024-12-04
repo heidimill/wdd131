@@ -14,7 +14,7 @@ const experiences = [
 
     {
         title: "Teaching Assistant, Intermediate Statistics",
-        date: "Apr 2024 - Jul 2024",
+        date: "Apr 2024 - Dec 2024",
         company: "Brigham Young University-Idaho",
         location: "Rexburg, ID",
         description: [
